@@ -1,5 +1,5 @@
-# SAIF Tools — Activity Lab
+# SAIF Activity Lab
 
-Internal productivity environment for SAIF ecosystem.
+Internal productivity environment for the SAIF ecosystem.
 
 Live: https://ridloabelian.github.io
