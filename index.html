@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.19.0/css/xterm.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
     <link rel="shortcut icon" type="image/png" href="https://github.githubassets.com/images/icons/emoji/unicode/1f300.png" />
-    <link rel="stylesheet" href="/styles-dca8b9c60cb4da36.css" integrity="sha384-tEcwTU5TDsvGwTsJ3thNM19dp1DyTgeXudEeP70sHxo03XB/A7g1d0rHr9zNPxk5"/>
+    <link rel="stylesheet" href="/styles-dca8b9c60cb4da36.css"/>
     <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.5.0/lib/xterm-addon-fit.js"></script>
-<link rel="modulepreload" href="/genact-4e2b268fc77eff70.js" crossorigin="anonymous" integrity="sha384-72HT5hkp5KuyBuJzvG7qhvBsQGRTcWGn34fskbULk2C8NUWnsDH0TJY3gyEod4X2"><link rel="modulepreload" href="/snippets/genact-643576be3e4db0ec/inline1.js" crossorigin="anonymous" integrity="sha384-oIemSIXFaCB3iqQwpHiSan/A5PZQDqBxzEwqzqol3vw8H49/px2jZ2ZRaQFRn6Gn"><link rel="modulepreload" href="/snippets/genact-643576be3e4db0ec/inline0.js" crossorigin="anonymous" integrity="sha384-jFRc1A4HtNwDXnHdw0/tjr5tFIlTSpVO31TtGNhMJR2+mpDG2s4x5ypXVlX2bfXI"><link rel="preload" href="/genact-4e2b268fc77eff70_bg.wasm" crossorigin="anonymous" integrity="sha384-h8aODyOSDbIvIpGyIXWtT03Te9agPGYXXbofShoSBfkgWffbQXCGpQw/R0pZaBC+" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/saif-core.js" crossorigin="anonymous"><link rel="modulepreload" href="/snippets/saif-643576be3e4db0ec/inline1.js" crossorigin="anonymous"><link rel="modulepreload" href="/snippets/saif-643576be3e4db0ec/inline0.js" crossorigin="anonymous"><link rel="preload" href="/saif-runtime.wasm" crossorigin="anonymous" as="fetch" type="application/wasm"></head>
 
 <body>
     <div id="terminal"></div>
@@ -28,8 +28,8 @@
     </script>
 
 <script type="module">
-import init, * as bindings from '/genact-4e2b268fc77eff70.js';
-const wasm = await init({ module_or_path: '/genact-4e2b268fc77eff70_bg.wasm' });
+import init, * as bindings from '/saif-core.js';
+const wasm = await init({ module_or_path: '/saif-runtime.wasm' });
 
 
 window.wasmBindings = bindings;
