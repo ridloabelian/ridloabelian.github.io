@@ -1,9 +1,9 @@
-import { write_to_xterm } from './snippets/genact-643576be3e4db0ec/inline1.js';
+import { write_to_xterm } from './snippets/saif-643576be3e4db0ec/inline1.js';
 
 export function wasm_main() {
     wasm.wasm_main();
 }
-import * as import1 from "./snippets/genact-643576be3e4db0ec/inline0.js"
+import * as import1 from "./snippets/saif-643576be3e4db0ec/inline0.js"
 
 function __wbg_get_imports() {
     const import0 = {
