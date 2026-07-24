@@ -1,46 +1,103 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Ridlo Abelian | SAIF Tools - Activity Lab</title>
-    <meta name="description" content="SAIF Activity Lab — Internal productivity environment">
-    <meta property="og:title" content="SAIF Tools">
-    <meta property="og:description" content="SAIF internal activity monitoring">
-    <meta property="og:type" content="website">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.19.0/css/xterm.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="/styles-dca8b9c60cb4da36.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.5.0/lib/xterm-addon-fit.js"></script>
-<link rel="modulepreload" href="/saif-core.js" crossorigin="anonymous"><link rel="modulepreload" href="/snippets/saif-643576be3e4db0ec/inline1.js" crossorigin="anonymous"><link rel="modulepreload" href="/snippets/saif-643576be3e4db0ec/inline0.js" crossorigin="anonymous"><link rel="preload" href="/saif-runtime.wasm" crossorigin="anonymous" as="fetch" type="application/wasm"></head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a09">
+  <meta name="description" content="Ridlo Abelian builds AI infrastructure, independent digital businesses, and productive waqf systems.">
+  <meta property="og:title" content="Ridlo Abelian — Founder Operating System">
+  <meta property="og:description" content="Waqf × AI × Independent Digital Businesses">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ridloabelian.github.io/">
+  <title>Ridlo Abelian — Founder Operating System</title>
+  <link rel="icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site.css">
+  <script src="/site.js" defer></script>
+</head>
 <body>
-    <div id="terminal"></div>
-    <script>
-        const xterm = new Terminal({
-            scrollback: 0
-        });
-        const fitAddon = new FitAddon.FitAddon();
-        xterm.loadAddon(fitAddon);
-        xterm.open(document.getElementById('terminal'));
-        fitAddon.fit();
-        window.xterm = xterm;
-    </script>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Ridlo Abelian home"><span>RA</span> Ridlo Abelian</a>
+    <nav aria-label="Primary navigation">
+      <a href="#builds">Builds</a><a href="#system">System</a><a href="/brain/">Brain</a><a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="mailto:hello@ridlo.id">Connect</a>
+  </header>
 
-<script type="module">
-import init, * as bindings from '/saif-core.js';
-const wasm = await init({ module_or_path: '/saif-runtime.wasm' });
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse"></span> Founder operating system · Indonesia</p>
+        <h1>Building systems that<br><em>compound good.</em></h1>
+        <p class="lede">AI infrastructure, independent digital businesses, and productive waqf systems—built halal-first, operated by agents, governed by humans.</p>
+        <div class="actions"><a class="button primary" href="#builds">Explore builds</a><a class="button secondary" href="/brain/">Enter second brain <span>↗</span></a></div>
+        <div class="thesis"><span>Waqf × AI × Independent Digital Businesses</span><span>Target · Rp1T by Q1 2030</span></div>
+      </div>
+      <a class="graph-card reveal delay" href="/brain/" aria-label="Open public second brain">
+        <canvas id="hero-graph" aria-hidden="true"></canvas>
+        <div class="graph-top"><span>PUBLIC KNOWLEDGE GRAPH</span><span class="live">LIVE</span></div>
+        <div class="graph-caption"><strong>Second Brain</strong><span>Ideas become systems.</span></div>
+      </a>
+    </section>
 
+    <section class="marquee" aria-label="Operating thesis"><div>SERVERLESS-FIRST <i>•</i> AGENT-OPERATED <i>•</i> HUMAN-GOVERNED <i>•</i> HALAL-FIRST <i>•</i> BORING TECHNOLOGY <i>•</i> REAL OUTCOMES</div></section>
 
-window.wasmBindings = bindings;
+    <section class="section shell" id="about">
+      <div class="section-head"><p class="kicker">01 · OPERATING MODEL</p><h2>One life. Four modes.</h2><p>Clear boundaries. No portfolio theater.</p></div>
+      <div class="modes">
+        <article><b>01</b><h3>Build</h3><p>B2B AI infrastructure through SAIF. B2C digital products through Prodig. Selected Web3 systems.</p></article>
+        <article><b>02</b><h3>Serve</h3><p>Agentic implementation, paid traffic, and content that turns capability into measurable outcomes.</p></article>
+        <article><b>03</b><h3>Invest</h3><p>Sharia-screened Indonesian equities and carefully selected digital assets. Principles over hype.</p></article>
+        <article><b>04</b><h3>Lead</h3><p>CEO at Amal Produktif. Innovation for Indonesia's nazhir ecosystem. Institutions remain institutionally separate.</p></article>
+      </div>
+    </section>
 
+    <section class="section builds-wrap" id="builds"><div class="shell">
+      <div class="section-head light"><p class="kicker">02 · SELECTED BUILDS</p><h2>Systems in the real world.</h2><p>Less announcement. More working infrastructure.</p></div>
+      <div class="builds">
+        <a href="https://saif.co.id" target="_blank" rel="noopener"><div class="build-meta"><span>01 / B2B AI</span><span>ACTIVE ↗</span></div><h3>SAIF</h3><p>Agentic infrastructure for businesses: Cloud, Agent, Brain, Router, Fleet, Guard.</p><small>Secure AI infrastructure · Indonesia</small></a>
+        <a href="https://prodig.id" target="_blank" rel="noopener"><div class="build-meta"><span>02 / B2C</span><span>BUILDING ↗</span></div><h3>Prodig</h3><p>AI-native digital products designed for direct, useful outcomes.</p><small>Independent digital business</small></a>
+        <a href="https://amalproduktif.or.id" target="_blank" rel="noopener"><div class="build-meta"><span>03 / WAQF</span><span>LEADING ↗</span></div><h3>Amal Produktif</h3><p>Productive waqf institution focused on durable social and economic impact.</p><small>Institutional role · not a personal venture</small></a>
+        <a href="https://ani.or.id" target="_blank" rel="noopener"><div class="build-meta"><span>04 / ECOSYSTEM</span><span>SERVING ↗</span></div><h3>ANI × FWP</h3><p>Innovation and collaboration infrastructure for Indonesia's nazhir ecosystem.</p><small>Association · forum · public service</small></a>
+      </div>
+    </div></section>
 
-dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+    <section class="section shell" id="system">
+      <div class="section-head"><p class="kicker">03 · AGENTIC COMPANY LAB</p><h2>Automation with accountability.</h2><p>Agents execute. Humans own consequential decisions.</p></div>
+      <div class="pipeline" role="list" aria-label="Agentic workflow">
+        <div role="listitem"><span>01</span><strong>Research</strong><small>Evidence, market, context</small></div><i>→</i>
+        <div role="listitem"><span>02</span><strong>Blueprint</strong><small>Scope, contract, guardrails</small></div><i>→</i>
+        <div role="listitem"><span>03</span><strong>Agent</strong><small>Tools, skills, execution</small></div><i>→</i>
+        <div role="listitem" class="approval"><span>04</span><strong>Human approval</strong><small>Money, data, public actions</small></div><i>→</i>
+        <div role="listitem"><span>05</span><strong>Outcome</strong><small>Verified business value</small></div>
+      </div>
+      <div class="system-grid">
+        <div><span>CONTROL PLANE</span><h3>Agent Factory</h3><p>Blueprint-driven provisioning. Least privilege. Tenant isolation. Auditable handoff.</p></div>
+        <div><span>REVENUE</span><h3>Business Workflows</h3><p>Lead handling, customer service, campaigns, and reporting—measured by outcomes.</p></div>
+        <div><span>INTELLIGENCE</span><h3>Second Brain</h3><p>Raw sources become linked concepts, decisions, reusable skills, and safer systems.</p></div>
+      </div>
+    </section>
 
-</script></body>
+    <section class="section log-wrap"><div class="shell log-grid">
+      <div class="section-head light"><p class="kicker">04 · SHIPPING LOG</p><h2>Learning in public.<br>Building in private.</h2><a class="text-link" href="/brain/">Explore the graph →</a></div>
+      <ol class="log">
+        <li><time>24 JUL 2026</time><span>Mapped manager-agent provisioning into a safe Agent Factory pattern.</span><b>RESEARCH</b></li>
+        <li><time>24 JUL 2026</time><span>Studied productized AI company offers for SAIF commercial packaging.</span><b>STRATEGY</b></li>
+        <li><time>23 JUL 2026</time><span>Audited Cloudflare Workers Paid utilization across active systems.</span><b>INFRA</b></li>
+        <li><time>23 JUL 2026</time><span>Evaluated managed sandbox hosting for isolated agents.</span><b>ARCHITECTURE</b></li>
+      </ol>
+    </div></section>
 
+    <section class="principles shell section">
+      <p class="kicker">05 · PRINCIPLES</p>
+      <blockquote>“Build what is useful.<br><em>Compound what is good.</em>”</blockquote>
+      <div><span>Halal first.</span><span>First principles.</span><span>Revenue before vanity.</span><span>Human accountability.</span><span>Own the critical path.</span><span>Systems that compound.</span></div>
+    </section>
+  </main>
+
+  <footer class="footer shell"><div><strong>RIDLO ABELIAN</strong><span>Founder · Builder · Operator</span></div><div class="footer-links"><a href="https://github.com/ridloabelian">GitHub</a><a href="https://x.com/ridloabelian">X</a><a href="https://www.linkedin.com/in/ridloabelian/">LinkedIn</a><a href="mailto:hello@ridlo.id">Email</a><a href="/lab/activity/">Lab</a></div><small>© 2026 · Built in Indonesia</small></footer>
+</body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ridlo Abelian | SAIF Tools - Activity Lab</title>
+    <meta name="description" content="SAIF Activity Lab — Internal productivity environment">
+    <meta property="og:title" content="SAIF Tools">
+    <meta property="og:description" content="SAIF internal activity monitoring">
+    <meta property="og:type" content="website">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.19.0/css/xterm.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/styles-dca8b9c60cb4da36.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.5.0/lib/xterm-addon-fit.js"></script>
+<link rel="modulepreload" href="/saif-core.js" crossorigin="anonymous"><link rel="modulepreload" href="/snippets/saif-643576be3e4db0ec/inline1.js" crossorigin="anonymous"><link rel="modulepreload" href="/snippets/saif-643576be3e4db0ec/inline0.js" crossorigin="anonymous"><link rel="preload" href="/saif-runtime.wasm" crossorigin="anonymous" as="fetch" type="application/wasm"></head>
+
+<body>
+    <div id="terminal"></div>
+    <script>
+        const xterm = new Terminal({
+            scrollback: 0
+        });
+        const fitAddon = new FitAddon.FitAddon();
+        xterm.loadAddon(fitAddon);
+        xterm.open(document.getElementById('terminal'));
+        fitAddon.fit();
+        window.xterm = xterm;
+    </script>
+
+<script type="module">
+import init, * as bindings from '/saif-core.js';
+const wasm = await init({ module_or_path: '/saif-runtime.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+
+</html>
